@@ -1,1 +1,1 @@
-# eat-da-burger-squelize
+# eat-da-burger-sequelize

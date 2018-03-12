@@ -1,0 +1,21 @@
+{{> burger-animation}}
+<div class="burger-wrapper">
+	<div class="uneaten-burgers">
+		{{#each burgers}}
+			{{#unless is_eaten}}
+				{{> burger-sort eaten=false}}
+			{{/unless}}
+		{{/each}}
+	</div>
+	<div class="eaten-burgers">
+		{{#each burgers}}
+			{{#if is_eaten}}
+				{{> burger-sort eaten=true}}
+			{{/if}}
+		{{/each}}
+	</div>
+</div>
+<div class="input-container">
+	{{> input-group }}
+</div>
+{{>footer}}
